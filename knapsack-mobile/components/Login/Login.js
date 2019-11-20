@@ -30,8 +30,8 @@ const styles = StyleSheet.create({
       marginTop: 100,
     },
     logo: {
-      height: 100,
-      width: 100
+      height: 200,
+      width: 200
     },
     formContainer: {
 
