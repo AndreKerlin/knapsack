@@ -1,19 +1,17 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Image, ActivityIndicator } from 'react-native';
+import { StyleSheet, Text, View, Image, KeyboardAvoidingView } from 'react-native';
 import LoginForm from './LoginForm';
-import { Asset, Font} from 'expo';
 
 export default class Login extends Component {
  
   
   render() {
     return (
-
-      <View style={styles.container}>
+    <KeyboardAvoidingView behavior="padding" style={styles.container}>
         <View style={styles.logoContainer}>
             <Image 
             style={styles.logo}
-            source={require('../../assets/images/KnapSACKBag.png')}/>
+            source={require('../../assets/images/KSACKbag.png')}/>
             <Image 
             style={styles.logotext}
             source={require('../../assets/images/logotypegreen.png')}/>
@@ -21,7 +19,7 @@ export default class Login extends Component {
         <View style={styles.formContainer}>
           <LoginForm />
         </View>
-      </View>
+    </KeyboardAvoidingView>  
     );
   }
 }
@@ -37,8 +35,8 @@ const styles = StyleSheet.create({
       justifyContent: 'center'
     },
     logo: {
-      height: 200,
-      width: 200
+      height: 275,
+      width: 275
     },
     title: {
       fontSize: 60,
@@ -47,8 +45,9 @@ const styles = StyleSheet.create({
       height: 500,
       width: 500,
       marginRight: 40,
-      marginTop: -160,
+      marginTop: -190,
       marginBottom: -225,
       alignItems: 'center'
     }
 });
+
