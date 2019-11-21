@@ -1,6 +1,7 @@
 import React from 'react';
 import { ScrollView, StyleSheet } from 'react-native';
 import { ExpoLinksView } from '@expo/samples';
+import Inventory from '../components/Inventory/Inventory';
 
 export default function LinksScreen() {
   return (
@@ -9,13 +10,13 @@ export default function LinksScreen() {
        * Go ahead and delete ExpoLinksView and replace it with your content;
        * we just wanted to provide you with some helpful links.
        */}
-      <ExpoLinksView />
+       <Inventory/>
     </ScrollView>
   );
 }
 
 LinksScreen.navigationOptions = {
-  title: 'Links',
+  title: 'Inventory',
 };
 
 const styles = StyleSheet.create({

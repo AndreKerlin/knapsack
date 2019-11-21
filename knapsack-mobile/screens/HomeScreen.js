@@ -10,6 +10,7 @@ import {
   View,
 } from 'react-native';
 import Login from '../components/Login/Login';
+import Inventory from '../components/Inventory/Inventory'
 import { MonoText } from '../components/StyledText';
 
 export default function HomeScreen() {
