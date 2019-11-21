@@ -8,27 +8,27 @@ export default class Lobby extends Component {
       <View style={styles.container}>
         <View style={styles.headerContainer}>
         <AwesomeButton
-            height={50}
-            width={125}
+            height={45}
+            width={140}
             textSize={20}
             textColor={"#000"}
-            style={styles.characterButton}
+            style={styles.headerButton}
             onPress={next => {
                 /** Do Something **/
                 next();
               }}
-            >Join Game</AwesomeButton>
+            >New Character</AwesomeButton>
             <AwesomeButton
-            height={50}
-            width={125}
+            height={45}
+            width={140}
             textSize={20}
             textColor={"#000"}
-            style={styles.characterButton}
+            style={styles.headerButton}
             onPress={next => {
                 /** Do Something **/
                 next();
               }}
-            >Create Game</AwesomeButton>
+            >Player View</AwesomeButton>
         </View>
         <View style={styles.characterContainer}>
             <AwesomeButton
@@ -61,9 +61,10 @@ export default class Lobby extends Component {
 
 const styles = StyleSheet.create({
     container: {
-        marginTop: 25,
+        paddingTop: 25,
         flex: 1,
-        alignItems: "center"
+        alignItems: "center",
+        backgroundColor: "#636363"
     },
     characterButton: {
         marginTop: 10
@@ -76,6 +77,10 @@ const styles = StyleSheet.create({
     },
     headerContainer: {
         // flex: 1,
-        // flexDirection: "row",
+        flexDirection: "row",
+        marginBottom: 25
+    },
+    headerButton: {
+      marginHorizontal: 5,
     },
 })

@@ -1,14 +1,17 @@
 import React from 'react';
-import { ExpoConfigView } from '@expo/samples';
 import Lobby from '../components/Lobby/Lobby'
 
-export default function SettingsScreen() {
+export default function LobbyScreen() {
 
   return (
     <Lobby/>
   )
 }
 
-SettingsScreen.navigationOptions = {
+LobbyScreen.navigationOptions = {
   title: 'Character Selection',
+  headerStyle: {
+    backgroundColor: '#636363',
+  },
+  headerTintColor: '#fff',
 };
