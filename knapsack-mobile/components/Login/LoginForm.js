@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, TextInput, TouchableOpacity, Text } from 'react-native';
 import { placeholder } from '@babel/types';
+import AwesomeButton from "react-native-really-awesome-button";
 
 export default class LoginForm extends Component {
   render() {
@@ -11,9 +12,10 @@ export default class LoginForm extends Component {
            style={styles.input} />
           <TextInput placeholder="Password" secureTextEntry
           style={styles.input} />
-          <TouchableOpacity style={styles.buttonContainer}>
+          <AwesomeButton height={50}
+            width={350} backgroundColor={'#06531D'} backgroundDarker={'#06331D'}>
               <Text style={styles.buttonText}>LOGIN</Text>
-          </TouchableOpacity>
+          </AwesomeButton>
 
     
           <View style={styles.signupTextCont}>
@@ -48,7 +50,7 @@ const styles = StyleSheet.create({
 
     buttonText: {
         textAlign: 'center',
-        color: '#06531D',
+        color: '#FFFFFF',
         fontWeight: '500',
         fontSize: 18
     },
@@ -57,8 +59,8 @@ const styles = StyleSheet.create({
         flexGrow: 1,
         alignItems: 'flex-end',
         justifyContent:"center",
-        paddingTop: 50,
-        paddingBottom: 30,
+        paddingTop: 40,
+        paddingBottom: 20,
         flexDirection: "row"
     },
 

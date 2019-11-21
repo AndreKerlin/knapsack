@@ -6,12 +6,14 @@ export default class Lobby extends Component {
   render() {
     return (
       <View style={styles.container}>
+          
         <View style={styles.headerContainer}>
         <AwesomeButton
             height={45}
             width={140}
             textSize={20}
-            textColor={"#000"}
+            textColor={'#FFFFFF'}
+            backgroundColor={'#06531D'} backgroundDarker={'#06331D'}
             style={styles.headerButton}
             onPress={next => {
                 /** Do Something **/
@@ -22,7 +24,8 @@ export default class Lobby extends Component {
             height={45}
             width={140}
             textSize={20}
-            textColor={"#000"}
+            textColor={'#FFFFFF'}
+            backgroundColor={'#06531D'} backgroundDarker={'#06331D'}
             style={styles.headerButton}
             onPress={next => {
                 /** Do Something **/
@@ -33,9 +36,10 @@ export default class Lobby extends Component {
         <View style={styles.characterContainer}>
             <AwesomeButton
             height={50}
-            width={250}
+            width={300}
             textSize={24}
-            textColor={"#000"}
+            textColor={'#FFFFFF'}
+            backgroundColor={'#06531D'} backgroundDarker={'#06331D'}
             style={styles.characterButton}
             onPress={next => {
                 /** Do Something **/
@@ -44,9 +48,10 @@ export default class Lobby extends Component {
             >Eragorn</AwesomeButton>
             <AwesomeButton
             height={50}
-            width={250}
+            width={300}
             textSize={24}
-            textColor={"#000"}
+            textColor={'#FFFFFF'}
+            backgroundColor={'#06531D'} backgroundDarker={'#06331D'}
             style={styles.characterButton}
             onPress={next => {
                 /** Do Something **/
@@ -70,17 +75,33 @@ const styles = StyleSheet.create({
         marginTop: 10
     },
     characterContainer: {
+      backgroundColor: '#d0c8b0',
+      justifyContent: "center",
+      alignItems: 'center',
+      paddingBottom: 250,
+      borderRadius: 10,
+      width: 350,
+      height: 400
     },
     logo: {
       height: 100,
       width: 100
     },
     headerContainer: {
+        backgroundColor: '#d0c8b0',
         // flex: 1,
         flexDirection: "row",
-        marginBottom: 25
+        marginBottom: 25,
+        height: 100,
+        width: 350,
+        alignItems:"center",
+        justifyContent: "center",
+        borderRadius: 10,  
+    
     },
+
     headerButton: {
       marginHorizontal: 5,
     },
+
 })

@@ -9,9 +9,9 @@ export default function LobbyScreen() {
 }
 
 LobbyScreen.navigationOptions = {
-  title: 'Character Selection',
+  title: 'Your Characters',
   headerStyle: {
-    backgroundColor: '#636363',
+    backgroundColor: '#06531D',
   },
   headerTintColor: '#fff',
 };
