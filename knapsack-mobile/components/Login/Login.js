@@ -1,20 +1,25 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
-// import LoginForm from './LoginFor'
+import { StyleSheet, Text, View, Image, KeyboardAvoidingView } from 'react-native';
+import LoginForm from './LoginForm';
 
 export default class Login extends Component {
+ 
+  
   render() {
     return (
-      <View style={styles.container}>
+    <KeyboardAvoidingView behavior="padding" style={styles.container}>
         <View style={styles.logoContainer}>
             <Image 
             style={styles.logo}
-            source={require('../../assets/images/logo.png')}/>
+            source={require('../../assets/images/KSACKbag.png')}/>
+            <Image 
+            style={styles.logotext}
+            source={require('../../assets/images/logotypegreen.png')}/>
         </View>
         <View style={styles.formContainer}>
-        {/* <LoginForm/> */}
+          <LoginForm />
         </View>
-      </View>
+    </KeyboardAvoidingView>  
     );
   }
 }
@@ -22,18 +27,27 @@ export default class Login extends Component {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: "center",
-        alignItems: "center"
+        backgroundColor: '#636363'
     },
     logoContainer: {
-      alignItems: "center",
-      marginTop: 100,
+      alignItems: 'center',
+      flexGrow: 1,
+      justifyContent: 'center'
     },
     logo: {
-      height: 100,
-      width: 100
+      height: 275,
+      width: 275
     },
-    formContainer: {
+    title: {
+      fontSize: 60,
+    },
+    logotext: {
+      height: 500,
+      width: 500,
+      marginRight: 40,
+      marginTop: -190,
+      marginBottom: -225,
+      alignItems: 'center'
+    }
+});
 
-    },
-})
